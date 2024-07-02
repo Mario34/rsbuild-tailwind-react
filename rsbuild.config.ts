@@ -11,7 +11,12 @@ export default defineConfig({
   source: {
     alias: {
       '@': path.join(__dirname, './src'),
-      '@bc/hy-ui': path.join(__dirname, '../components/src'),
+    },
+  },
+  html: {
+    meta: {
+      viewport:
+        'width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0',
     },
   },
   plugins: [pluginReact()],
